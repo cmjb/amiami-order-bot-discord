@@ -3,6 +3,10 @@ WORKDIR /app
 
 ENV NODE_ENV production
 
+ENV DISCORD_CHANNEL
+ENV DISCORD_TOKEN
+ENV SEARCH_INTERVAL_MINUTES
+
 ADD src ./src
 COPY package* ./
 COPY tsconfig.json ./
