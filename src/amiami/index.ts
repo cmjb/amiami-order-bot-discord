@@ -3,7 +3,9 @@ import axios from "axios";
 import {createClient} from 'redis';
 import * as discord from '../discord/init';
 
-const client = createClient();
+const client = createClient({
+    url: 'redis://redis:6379'
+});
 
 client.connect();
 

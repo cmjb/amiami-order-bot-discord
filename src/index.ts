@@ -6,7 +6,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 export function main() {
-  let intervalTimeInMinutes = parseInt(process.env.SEARCH_INTERVAL_MINUTES || 5) * 60000;
+  let intervalTimeInMinutes = parseInt(process.env.SEARCH_INTERVAL_MINUTES || '5') * 60000;
   discord.init();
   setInterval(queueDiscordAmiAmiMessages, intervalTimeInMinutes);
   terminal.bold('amiami-order-bot messaging scheduled. \n');
