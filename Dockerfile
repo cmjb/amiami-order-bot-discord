@@ -14,6 +14,6 @@ RUN adduser -S nodeuser -u 1001
 RUN chown -R nodeuser:nodejs ./
 USER nodeuser
 RUN npm i
-EXPOSE 3001
+RUN npx tsc
 
 CMD ["npm", "start"]
