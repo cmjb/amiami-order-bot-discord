@@ -1,5 +1,8 @@
 {
-  "devDependencies": {
+  "name": "amiami-order-bot",
+  "version": "1.0.1",
+  "main": "index.js",
+  "dependencies": {
     "@discordjs/rest": "^0.1.0-canary.0",
     "@types/axios": "^0.14.0",
     "@types/jsdom": "^16.2.13",
@@ -12,12 +15,7 @@
     "eslint-plugin-no-loops": "^0.3.0",
     "jsdom": "^17.0.0",
     "prettier": "^2.4.1",
-    "typescript": "^4.4.3"
-  },
-  "name": "amiami-order-bot",
-  "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {
+    "typescript": "^4.4.3",
     "@discordjs/builders": "^0.6.0",
     "@types/redis": "^4.0.11",
     "acorn": "^7.4.1",
